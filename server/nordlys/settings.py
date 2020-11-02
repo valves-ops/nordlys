@@ -10,17 +10,22 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+import os, sys
 from pathlib import Path
+sys.path.insert(1, '/Projects/neopyxel/neopyxel')
+import neopyxel
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+RELAY = neopyxel.NeopyxelRelay(debug=True)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '6e&($w!!jbi#1@28226+l86yi1k17c$l3z)i($)cax1ps05sq5'
+SECRET_KEY = os.environ.get(
+    'DJANGO_SECRET_KEY') or '6e&($w!!jbi#1@28226+l86yi1k17c$l3z)i($)cax1ps05sq5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'core'
 ]
 
 MIDDLEWARE = [
