@@ -1,0 +1,8 @@
+nordlys/__pycache__
+**/__pycache__/*
+.vscode/
+
+build/
+dist/
+*.egg-info/
+**/*.egg-info/
