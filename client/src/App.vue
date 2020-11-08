@@ -1,5 +1,5 @@
 <template>
-    <v-app class="container">
+    <v-app>
         <router-view></router-view>
     </v-app>
 </template>

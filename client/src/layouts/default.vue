@@ -4,24 +4,21 @@
         color="#fcb69f"
         dark
         shrink-on-scroll
-        src="https://picsum.photos/1920/1080?random"
+        src="https://i.imgur.com/FCHP7CN.jpg"
         scroll-target="#scrolling-techniques-2"
     >
         <template v-slot:img="{ props }">
-            <v-img
-                v-bind="props"
-                gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
-            ></v-img>
+            <v-img v-bind="props"></v-img>
         </template>
 
         <v-app-bar-nav-icon></v-app-bar-nav-icon>
 
-        <v-toolbar-title>Cold Reload</v-toolbar-title>
+        <v-toolbar-title>Hot Reload</v-toolbar-title>
 
         <v-spacer></v-spacer>
 
         <v-btn icon>
-            <v-icon>mdi-magnify</v-icon>
+            <v-icon>mdi-chevron-down</v-icon>
         </v-btn>
 
         <v-btn icon>
