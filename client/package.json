@@ -1,0 +1,48 @@
+{
+  "name": "nordlys",
+  "description": "A powerful web application to wrest control of complex neopixel led stripes setup",
+  "version": "1.0.0",
+  "author": "Vinicius Alves",
+  "license": "GPLv3",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --inline",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "serve": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "vue": "^2.5.11",
+    "vue-router": "^3.4.8",
+    "vuetify": "^2.3.16"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "deepmerge": "^4.2.2",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-config-standard": "^16.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-vue": "^7.1.0",
+    "file-loader": "^1.1.4",
+    "node-sass": "^4.5.3",
+    "sass": "^1.28.0",
+    "sass-loader": "^6.0.7",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
