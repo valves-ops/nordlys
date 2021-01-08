@@ -8,26 +8,46 @@
         scroll-target="#scrolling-techniques-2"
     >
         <template v-slot:img="{ props }">
-            <v-img v-bind="props"></v-img>
+            <v-img
+                v-bind="props"
+                gradient="to bottom, rgba(0,0,0,0), rgba(0,0,0,1)"
+            ></v-img>
         </template>
+        <v-row>
+            <v-col cols="3"> </v-col>
+            <v-col class="d-flex justify-space-around">
+                <v-toolbar-title class="justify-center"
+                    >NORDLYS</v-toolbar-title
+                ></v-col
+            >
+            <v-col cols="3" class="d-flex justify-end">
+                <v-btn icon>
+                    <v-icon>mdi-help-circle</v-icon>
+                </v-btn>
 
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-        <v-toolbar-title>Hot Reload</v-toolbar-title>
-
+                <v-btn icon>
+                    <v-icon>mdi-cog</v-icon>
+                </v-btn></v-col
+            >
+        </v-row>
+        <!-- <v-spacer></v-spacer>
+        <v-toolbar-title class="justify-center">NORDLYS</v-toolbar-title>
         <v-spacer></v-spacer>
-
         <v-btn icon>
-            <v-icon>mdi-chevron-down</v-icon>
+            <v-icon>mdi-help-circle</v-icon>
         </v-btn>
 
         <v-btn icon>
-            <v-icon>mdi-heart</v-icon>
-        </v-btn>
+            <v-icon>mdi-cog</v-icon>
+        </v-btn> -->
 
-        <v-btn icon>
-            <v-icon>mdi-dots-vertical</v-icon>
-        </v-btn>
+        <template v-slot:extension>
+            <v-tabs fixed-tabs>
+                <v-tab>Effects</v-tab>
+                <v-tab>Dash</v-tab>
+                <v-tab>Configs</v-tab>
+            </v-tabs>
+        </template>
     </v-app-bar>
 </template>
 
